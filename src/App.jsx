@@ -4,15 +4,14 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
-import Cart from "./Pages/Cart"
-import LoginSignup from "./Pages/LoginSignup"
+import Cart from "./Pages/Cart";
+import LoginSignup from "./Pages/LoginSignup";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-
       <BrowserRouter>
-
         <Navbar />
 
         <Routes>
@@ -26,7 +25,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
-
+        <Footer />
       </BrowserRouter>
     </div>
   );
